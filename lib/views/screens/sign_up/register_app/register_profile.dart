@@ -42,7 +42,7 @@ class _ResisterAccountState extends State<ResisterAccount> {
         child: SizedBox(
           width: double.infinity,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -51,7 +51,7 @@ class _ResisterAccountState extends State<ResisterAccount> {
                 ),
                 Text(
                   'Resister Account',
-                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 27),
+                  style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 27),
                 ),
                 SizedBox(
                   height: screenHeight(context) * 0.004,
