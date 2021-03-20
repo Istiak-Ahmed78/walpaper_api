@@ -13,31 +13,12 @@ class _ResisterAccountState extends State<ResisterAccount> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmPassController = TextEditingController();
-  double screenHeight(BuildContext context) =>
-      MediaQuery.of(context).size.height;
-  double screenWight(BuildContext context) => MediaQuery.of(context).size.width;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kWhiteColor,
-      appBar: AppBar(
-        elevation: 0.0,
-        centerTitle: true,
-        backgroundColor: kWhiteColor,
-        title: Text(
-          'Sign Up',
-          style: TextStyle(color: kSecondaryColor),
-        ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.arrow_back_ios,
-            color: kBlack,
-          ),
-        ),
-      ),
+      appBar: appBar(context, 'Sign Up'),
       body: SafeArea(
         child: SizedBox(
           width: double.infinity,
@@ -51,7 +32,8 @@ class _ResisterAccountState extends State<ResisterAccount> {
                 ),
                 Text(
                   'Resister Account',
-                  style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 27),
+                  style: const TextStyle(
+                      fontWeight: FontWeight.w600, fontSize: 27),
                 ),
                 SizedBox(
                   height: screenHeight(context) * 0.004,
