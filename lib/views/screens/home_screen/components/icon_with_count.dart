@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:new_to_edit/views/styles/styles.dart';
 
 class IconWithCont extends StatelessWidget {
-  final String count;
-  const IconWithCont({Key key, this.count}) : super(key: key);
+  final String? count;
+  const IconWithCont({Key? key, this.count}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -28,7 +28,7 @@ class IconWithCont extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(color: kRedColor, shape: BoxShape.circle),
             child: Text(
-              count,
+              count!,
               style: TextStyle(color: kWhiteColor, fontSize: 10),
             ),
           ),

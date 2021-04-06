@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 
 class EveryTextField extends StatelessWidget {
-  final String hintText;
-  final String helperText;
-  final String preFix;
-  final TextEditingController textEditingController;
+  final String? hintText;
+  final String? helperText;
+  final String? preFix;
+  final TextEditingController? textEditingController;
   EveryTextField(
       {this.helperText,
       this.textEditingController,

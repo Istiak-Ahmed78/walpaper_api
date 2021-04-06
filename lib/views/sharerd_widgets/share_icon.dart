@@ -3,7 +3,7 @@ import 'package:new_to_edit/views/styles/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ShareIcon extends StatelessWidget {
-  final String shareIcon;
+  final String? shareIcon;
   ShareIcon({this.shareIcon});
   @override
   Widget build(BuildContext context) {

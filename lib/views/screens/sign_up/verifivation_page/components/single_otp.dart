@@ -3,9 +3,9 @@ import 'package:new_to_edit/constants.dart';
 import 'package:new_to_edit/views/styles/styles.dart';
 
 class SingleOTP extends StatelessWidget {
-  final TextEditingController otpController;
-  final FocusNode focusNode;
-  final Function onChanged;
+  final TextEditingController? otpController;
+  final FocusNode? focusNode;
+  final ValueChanged<String>? onChanged;
   SingleOTP({this.focusNode, this.otpController, this.onChanged});
 
   @override

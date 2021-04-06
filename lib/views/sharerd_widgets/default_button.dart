@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:new_to_edit/views/styles/colors.dart';
 
 class DefaultButton extends StatelessWidget {
-  final Function onPressed;
-  final String buttonText;
+  final VoidCallback? onPressed;
+  final String? buttonText;
   DefaultButton({this.buttonText, this.onPressed});
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class DefaultButton extends StatelessWidget {
                   RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20))))),
           onPressed: onPressed,
-          child: Text(buttonText),
+          child: Text(buttonText!),
         ));
   }
 }

@@ -59,7 +59,7 @@ timeOur() => Row(
         TweenAnimationBuilder(
             tween: Tween(begin: 30.0, end: 0.0),
             duration: Duration(seconds: 30),
-            builder: (_, value, child) => Text(
+            builder: (_, double value, child) => Text(
                   '00:${value.toInt().toString()}',
                   style: TextStyle(color: kPrimaryColor),
                 ))

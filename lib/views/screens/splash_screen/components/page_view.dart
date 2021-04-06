@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class PageViewContent extends StatelessWidget {
-  final String text;
-  final String imageAdress;
+  final String? text;
+  final String? imageAdress;
   PageViewContent({this.text, this.imageAdress});
   @override
   Widget build(BuildContext context) {
@@ -11,14 +11,14 @@ class PageViewContent extends StatelessWidget {
       children: [
         Spacer(),
         Text(
-          text,
+          text!,
           textAlign: TextAlign.center,
         ),
         Spacer(
           flex: 7,
         ),
         Image.asset(
-          imageAdress,
+          imageAdress!,
           height: 260,
           width: 265,
         )

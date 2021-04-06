@@ -1,6 +1,6 @@
 class SpleshScreenViewModel {
-  final String subText;
-  final String imageAdress;
+  final String? subText;
+  final String? imageAdress;
   SpleshScreenViewModel({this.imageAdress, this.subText});
   static List<SpleshScreenViewModel> pageViewList = [
     SpleshScreenViewModel(
